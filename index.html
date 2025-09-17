@@ -1,0 +1,61 @@
+!doctype html>
+<html>
+  <head>
+    <title>Unit Converter Playground</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Unit <span id="U">Converter Playground</span></h1>
+    </header> 
+    <main class="converter-container">
+      <div class="converter-buttons">
+        <h2>Select Convertion</h2>
+        <button id="cb">
+        <select id="sc" onchange="setcategory()">
+          <option value="length">Length</option>
+          <option value="time">Time</option>
+          <option value="weight">Mass/Weight</option>
+          <option value="temperature">Temperature</option>
+        </select>
+        </button>
+      </div>
+      <div class="conversion-input">
+        <input type="number" placeholder="Enter a number" id="input" />
+        <div class="selection">
+          <select id="select1">
+            <option disabled value="">Select Unit</option>
+            <option selected value="Millimeters">Millimeters</option>
+            <option value="Centimeters">Centimeters</option>
+            <option value="Inches">Inches</option>
+            <option value="Decimeters">Decimeters</option>
+            <option value="Feet">Feet</option>
+            <option value="Yards">Yards</option>
+            <option value="Meters">Meters</option>
+            <option value="Decameters">Decameters</option>
+            <option value="Hectometers">Hectometers</option>
+            <option value="Kilometers">Kilometers</option>
+            <option value="Miles">Miles</option>
+          </select>
+          <h3>to</h3>
+          <select id="select2">
+            <option disabled value="">Select Unit</option>
+            <option selected value="Millimeters">Millimeters</option>
+            <option value="Centimeters">Centimeters</option>
+            <option value="Inches">Inches</option>
+            <option value="Decimeters">Decimeters</option>
+            <option value="Feet">Feet</option>
+            <option value="Yards">Yards</option>
+            <option value="Meters">Meters</option>
+            <option value="Decameters">Decameters</option>
+            <option value="Hectometers">Hectometers</option>
+            <option value="Kilometers">Kilometers</option>
+            <option value="Miles">Miles</option>
+          </select>
+        </div>
+        <button id="convert" onclick="convert()">Convert</button>
+        <h1 id="Rh">Result =</h1>
+        <div id="result"></div>
+        <a href="/calculator.html">Calculator </a>
+      </div>
+    </main>
